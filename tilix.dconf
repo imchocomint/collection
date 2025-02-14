@@ -1,0 +1,20 @@
+[/]
+prompt-on-delete-profile=false
+quake-specific-monitor=0
+theme-variant='dark'
+unsafe-paste-alert=false
+warn-vte-config-issue=false
+window-style='disable-csd-hide-toolbar'
+
+[profiles]
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-transparency-percent=0
+bold-is-bright=true
+dim-transparency-percent=0
+font='JetBrains Mono 12'
+palette=['#000000000000', '#CCCC00000000', '#4E4E9A9A0606', '#C4C4A0A00000', '#E0E01B1B2424', '#757550507B7B', '#060698209A9A', '#D3D3D7D7CFCF', '#000000000000', '#EFEF29292929', '#8A8AE2E23434', '#FCFCE9E94F4F', '#E0E01B1B2424', '#ADAD7F7FA8A8', '#3434E2E2E2E2', '#EEEEEEEEECEC']
+use-system-font=false
+use-theme-colors=true
+visible-name='Default'

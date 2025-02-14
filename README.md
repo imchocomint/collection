@@ -1,6 +1,4 @@
-# collection
-A collection of my past and current Linux rice.
+# bleeding-eyes with acheron
+[as seen on reddit](https://www.reddit.com/r/unixporn/comments/1f1qz64/i3_acheron_rice_that_may_hurt_your_eyes/)
 
-This is a central hub for all of my rices. For dotfiles, go to branches.
-
-Naming scheme: WM/DE + date (month + year)
+[comment with all softwares](https://www.reddit.com/r/unixporn/comments/1f1qz64/comment/lk0zdz3/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
