@@ -1,0 +1,2 @@
+[$Version]
+update_info=deepin-kwinrules.upd:replace-placement-string-to-enum,deepin-kwinrules.upd:use-virtual-desktop-ids,kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids

@@ -1,0 +1,12 @@
+[General]
+TimeFormat=1
+Volume=1
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAosAAADhAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1 XPosition 1366x768=357
+eDP-1 YPosition 1366x768=222
+
+[Phonon::AudioOutput]
+Dragon Player_Volume=1

@@ -1,0 +1,18 @@
+[General]
+Version=201
+ViewPropsTimestamp=2023,7,6,8,19,4.776
+
+[KPropertiesDialog]
+eDP-1 Height 1366x768=598
+eDP-1 Width 1366x768=522
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 Window-Maximized 1366x768=true
+eDP-1 XPosition 1366x768=303
+eDP-1 YPosition 1366x768=130
+
+[Open-with settings]
+CompletionMode=1
+History=dis

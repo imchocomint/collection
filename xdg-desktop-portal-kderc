@@ -1,0 +1,8 @@
+[FileDialogSize]
+eDP-1 Height 1366x768=512
+eDP-1 Width 1366x768=884
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Ảnh/Ảnh nền/73.jpg,file:$HOME/Ảnh/Ảnh nền/73.jpg
+Recent URLs[$e]=file:$HOME/Ảnh/Ảnh nền/,file:$HOME/,file:$HOME/Ảnh/
+detailViewIconSize=16
