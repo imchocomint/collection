@@ -87,4 +87,5 @@ mode "resize" {
 }
 
 exec_always nwg-panel
+exec_always /usr/libexec/fcitx5-wayland-launcher
 include /etc/sway/config.d/*
