@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Openbox main configuration file
+    This file has been generated to be similar to your sway config.
+-->
+<openbox_config xmlns="http://openbox.org/3.4/rc">
+  <resistance>
+    <strength>10</strength>
+    <screen_edge_strength>20</screen_edge_strength>
+  </resistance>
+  <focus>
+    <focusNew>no</focusNew>
+    <!-- Always try to focus new windows when they appear. -->
+    <followMouse>yes</followMouse>
+    <!-- Do not change focus when moving the mouse. -->
+    <focusLast>no</focusLast>
+    <!-- Focus the last used window when changing desktops. -->
+    <underMouse>no</underMouse>
+    <!-- Do not focus a window when the mouse is over it. -->
+    <focusDelay>1</focusDelay>
+    <!-- Time in ms to wait before focusing a new window. -->
+    <raiseOnFocus>no</raiseOnFocus>
+    <!-- Do not raise a window when it gets focus. -->
+  </focus>
+  <placement>
+    <policy>Smart</policy>
+    <!-- 'Smart' or 'UnderMouse' -->
+    <center>yes</center>
+    <!-- Always center new windows when they appear. -->
+    <monitor>Primary</monitor>
+    <primaryMonitor>1</primaryMonitor>
+  </placement>
+  <theme>
+    <name>Breeze-ob</name>
+    <!-- You can install themes and change the name here. -->
+    <font place="ActiveWindow">
+      <name>sans</name>
+      <size>8</size>
+      <weight>bold</weight>
+      <slant>normal</slant>
+    </font>
+    <font place="InactiveWindow">
+      <name>sans</name>
+      <size>8</size>
+      <weight>normal</weight>
+      <slant>normal</slant>
+    </font>
+    <!-- To mimic sway's borderless look, you need a theme with no borders,
+         or you can set window decorations to 'undecorated' in the applications section. -->
+    <keepBorder>yes</keepBorder>
+    <animateIconify>no</animateIconify>
+    <border.width>0.1</border.width>
+    <padding.width>5</padding.width>
+    <!-- Mimics sway's "gaps inner" -->
+    <outer_padding.width>0</outer_padding.width>
+    <window.label.text.justify>center</window.label.text.justify>
+    <titleLayout>NLIMC</titleLayout>
+    <font place="MenuHeader">
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
+    </font>
+    <font place="MenuItem">
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
+    </font>
+    <font place="ActiveOnScreenDisplay">
+      <name/>
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight/>
+      <slant/>
+    </font>
+  </theme>
+  <desktops>
+    <!-- Define 10 desktops, like in your sway config -->
+    <number>10</number>
+    <firstdesk>1</firstdesk>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+      <name>5</name>
+      <name>6</name>
+      <name>7</name>
+      <name>8</name>
+      <name>9</name>
+      <name>10</name>
+    </names>
+    <popupTime>0</popupTime>
+    <!-- The number of milliseconds to show the desktop switch popup -->
+  </desktops>
+  <resize>
+    <drawContents>yes</drawContents>
+    <popupShow>Nonpixel</popupShow>
+    <!-- 'Always', 'Never', or 'Nonpixel' (only show if not resizing by pixel) -->
+    <popupPosition>Center</popupPosition>
+    <popupFixedPosition>
+      <x>0</x>
+      <y>0</y>
+    </popupFixedPosition>
+  </resize>
+  <margins>
+    <left>5</left>
+    <right>5</right>
+    <top>5</top>
+    <bottom>5</bottom>
+  </margins>
+  <keyboard>
+    <!--
+        KEYBINDING SYNTAX
+        Mod4 = W (Super/Windows key)
+        Alt  = A
+        Ctrl = C
+        Shift= S
+    -->
+    <chainQuitKey>C-g</chainQuitKey>
+    <!-- Keybindings for applications -->
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>kitty -c ~/.config/kitty/gruvbox.conf</command>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Execute">
+        <command>jgmenu_run</command>
+      </action>
+    </keybind>
+    <keybind key="W-n">
+      <action name="Execute">
+        <command>dunst</command>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot '%Y-%m-%d-%H%M%S_screenshot.png' -e 'mv $f ~/Pictures/'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <command>scrot -s '%Y-%m-%d-%H%M%S_screenshot.png' -e 'mv $f ~/Pictures/'</command>
+      </action>
+    </keybind>
+    <!-- Window management -->
+    <keybind key="W-S-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <!-- Desktop switching -->
+    <keybind key="W-1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="W-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="GoToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+    <!-- Send window to desktop -->
+    <keybind key="W-S-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-5">
+      <action name="SendToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-6">
+      <action name="SendToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-7">
+      <action name="SendToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-8">
+      <action name="SendToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-9">
+      <action name="SendToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-0">
+      <action name="SendToDesktop">
+        <to>10</to>
+      </action>
+      <!-- Window Resizing -->
+    </keybind>
+    <!-- Keybindings for Aero Snap -->
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>+0</y>
+        <width>50/100</width>
+        <height>97/100</height>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>+0</x>
+        <y>+0</y>
+        <width>50/100</width>
+        <height>97/100</height>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>75/100</width>
+        <height>75/100</height>
+      </action>
+      <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>50/100</width>
+        <height>50/100</height>
+      </action>
+      <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="W-S-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <width>75/100</width>
+        <height>75/100</height>
+      </action>
+      <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="MoveResizeTo">
+        <width>100/100</width>
+        <height>95/100</height>
+      </action>
+      <action name="MoveToCenter"/>
+    </keybind>
+    <!-- Keybindings for moving window to edge -->
+    <keybind key="W-C-Right">
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-C-Left">
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="W-C-Up">
+      <action name="MoveToEdge">
+        <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="W-C-Down">
+      <action name="MoveToEdge">
+        <direction>south</direction>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="MoveToCenter"/>
+    </keybind>
+  </keyboard>
+  <mouse>
+    <dragThreshold>8</dragThreshold>
+    <doubleClickTime>200</doubleClickTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <context name="Frame">
+      <mousebind button="A-Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Titlebar">
+      <mousebind button="Left" action="DoubleClick"/>
+    </context>
+  </mouse>
+  <applications>
+    <application class="*">
+      <decor>no</decor>
+    </application>
+  </applications>
+  <dock>
+    <position>Bottom</position>
+    <floatingX>0</floatingX>
+    <floatingY>0</floatingY>
+    <stacking>Above</stacking>
+    <direction>Horizontal</direction>
+    <noStrut>no</noStrut>
+    <autoHide>no</autoHide>
+    <hideDelay>300</hideDelay>
+    <showDelay>300</showDelay>
+  </dock>
+</openbox_config>

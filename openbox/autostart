@@ -1,0 +1,17 @@
+#!/bin/bash
+if ! pgrep -x "xfce4-panel" > /dev/null; then
+    xfce4-panel &
+fi
+if ! pgrep -x "dunst" > /dev/null; then
+    dunst -geometry "300x60-28+56" &
+fi
+if ! pgrep -x "picom" > /dev/null; then
+    picom --config ~/.config/picom/picom.conf &
+fi
+nm-applet &
+if ! pgrep -x "fcitx5" > /dev/null; then
+    fcitx5 &
+fi
+nitrogen --restore &
+numlockx on &
+jgmenu &
